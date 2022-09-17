@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedInteger("user_id");
             $table->unsignedInteger("place_id");
+            $table->int("time");
             $table->float("rate");
             $table->timestamps();
         });

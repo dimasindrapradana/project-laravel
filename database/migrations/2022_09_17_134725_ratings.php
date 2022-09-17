@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('ratings', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger("user_id");
             $table->unsignedInteger("place_id");
             $table->float("rate");
             $table->timestamps();
